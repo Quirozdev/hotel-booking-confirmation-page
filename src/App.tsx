@@ -1,11 +1,7 @@
-import { SideBar } from "./features/landing/widgets/Sidebar";
+import { LandingPage } from "./features/landing/pages/LandingPage";
 
 function App() {
-  return (
-    <>
-      <SideBar />
-    </>
-  );
+  return <LandingPage />;
 }
 
 export default App;
