@@ -1,0 +1,27 @@
+import type { SVGProps } from "react";
+
+export function PinIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="none"
+      viewBox="0 0 20 20"
+      {...props}
+    >
+      <g
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.2"
+      >
+        <path d="M3.979 9.022c0 4.284 5.057 8.378 6.02 8.378.964 0 6.021-4.094 6.021-8.378a6.02 6.02 0 1 0-12.041 0" />
+        <path
+          d="M12.006 8.972a2.006 2.006 0 1 0-4.013 0 2.006 2.006 0 0 0 4.013 0"
+          clipRule="evenodd"
+        />
+      </g>
+    </svg>
+  );
+}
