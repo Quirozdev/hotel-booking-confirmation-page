@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: "/hotel-booking-confirmation-page/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
