@@ -1,4 +1,5 @@
 import { Button } from "@/shared/components/Button";
+import { WelcomeCard } from "../components/WelcomeCard";
 
 export function MainSection() {
   return (
@@ -20,6 +21,7 @@ export function MainSection() {
           <Button text="Add to calendar" variant="secondary" />
         </div>
       </div>
+      <WelcomeCard />
     </main>
   );
 }
