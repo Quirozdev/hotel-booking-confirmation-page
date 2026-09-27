@@ -1,9 +1,10 @@
 import { Button } from "@/shared/components/Button";
 import { WelcomeCard } from "../components/WelcomeCard";
+import { ReceiptCard } from "../components/ReceiptCard";
 
 export function MainSection() {
   return (
-    <main className="px-4 py-5 md:p-6 xl:px-10 xl:py-8">
+    <main className="flex flex-col gap-y-12 px-4 py-5 md:gap-y-10 md:p-6 xl:px-10 xl:py-8">
       <div className="flex flex-col justify-between gap-y-4 md:flex-row md:items-center">
         <div>
           <p className="text-preset-8 font-dm-mono text-neutral-600">
@@ -21,7 +22,10 @@ export function MainSection() {
           <Button text="Add to calendar" variant="secondary" />
         </div>
       </div>
-      <WelcomeCard />
+      <div className="flex justify-center gap-x-4">
+        <WelcomeCard className="max-w-[400px] flex-1" />
+        <ReceiptCard className="max-w-[400px] flex-1" />
+      </div>
     </main>
   );
 }

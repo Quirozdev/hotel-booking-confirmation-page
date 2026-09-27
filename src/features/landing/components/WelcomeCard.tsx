@@ -1,13 +1,20 @@
 import SunIcon from "@/assets/images/icon-sun.svg";
+import { cn } from "@/shared/lib/cn";
 
-export function WelcomeCard() {
+type Props = React.ComponentPropsWithRef<"div">;
+
+export function WelcomeCard({ className, ...props }: Props) {
   return (
     <div
-      className="rounded-20 flex w-[400px] flex-col gap-y-5 p-6 shadow-[0_20px_40px_-20px_rgba(194,90,46,0.55),0_50px_80px_-30px_rgba(169,66,31,0.45),inset_0_0_0_1px_rgba(255,244,220,0.12)]"
+      className={cn(
+        "rounded-20 flex flex-col gap-y-5 p-6 shadow-[0_20px_40px_-20px_rgba(194,90,46,0.55),0_50px_80px_-30px_rgba(169,66,31,0.45),inset_0_0_0_1px_rgba(255,244,220,0.12)]",
+        className,
+      )}
       style={{
         backgroundImage:
           "radial-gradient(var(--color-terracotta-400) 0%, var(--color-terracotta-500) 50%, var(--color-terracotta-700) 100%)",
       }}
+      {...props}
     >
       <div className="border-terracotta-400 flex justify-between border-t border-dashed">
         <p className="text-preset-10 text-sun-50 font-dm-mono pt-4 uppercase">
