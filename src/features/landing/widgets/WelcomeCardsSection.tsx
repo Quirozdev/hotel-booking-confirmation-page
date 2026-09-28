@@ -6,7 +6,7 @@ import SparkleIcon from "@/assets/images/icon-sparkle.svg";
 export function WelcomeCardsSection() {
   return (
     <section className="flex flex-col gap-y-1">
-      <div className="group relative flex flex-col items-center justify-center gap-y-1 md:flex-row-reverse md:items-stretch">
+      <div className="group relative flex flex-col items-center justify-center gap-y-1 self-center md:flex-row-reverse md:items-stretch">
         <WelcomeCard className="z-10 w-full max-w-[400px] flex-1 rotate-2 md:rotate-[4deg] xl:transition-transform xl:duration-700 xl:ease-in-out xl:group-hover:translate-x-20 xl:group-hover:rotate-[-5deg]" />
         <img
           src={SunIllustrationIcon}
