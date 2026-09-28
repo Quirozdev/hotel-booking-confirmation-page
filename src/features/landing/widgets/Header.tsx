@@ -9,7 +9,7 @@ export function Header({ onMenuToggle }: Props) {
   return (
     <header className="relative flex flex-col gap-y-4 xl:hidden">
       <div className="flex items-center justify-between gap-4 border-b border-b-neutral-400 px-4 py-4 md:px-6">
-        <a href="/" className="cursor-pointer">
+        <a href="/hotel-booking-confirmation-page/" className="cursor-pointer">
           <img src={Logo} alt="Logo" />
         </a>
         <button

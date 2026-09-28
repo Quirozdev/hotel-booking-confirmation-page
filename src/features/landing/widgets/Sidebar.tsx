@@ -22,7 +22,10 @@ export function SideBar({ isOpenOnMobile, onClose }: Props) {
     >
       <div className="flex flex-1 flex-col gap-y-4">
         <div className="flex items-center justify-between gap-4">
-          <a href="/" className="cursor-pointer">
+          <a
+            href="/hotel-booking-confirmation-page/"
+            className="cursor-pointer"
+          >
             <img src={Logo} alt="Logo" />
           </a>
           <button
