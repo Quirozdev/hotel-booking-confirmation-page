@@ -24,7 +24,7 @@ export function Overlay({
     return () => {
       document.removeEventListener("keyup", onKeyUp);
     };
-  });
+  }, []);
 
   if (!isVisible) return null;
 
